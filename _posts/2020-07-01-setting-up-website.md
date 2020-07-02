@@ -89,9 +89,9 @@ To add new posts to your website, just add files to the `_posts` folder. There i
 
 You can also edit the home page of your website by replacing `about.md` and `index.md`. Furthermore, change site-wide settings (like your website name) in `_config.yml`. That's it! Have fun with your new website!
 
-![look at him go](/img/dancing_baby.gif)
-![surfing the web](/img/win_explorer.gif)
-![don't do drugs thx](/img/smiley.gif)
+![look at him go](/img/2020-07-01/dancing_baby.gif)
+![surfing the web](/img/2020-07-01/win_explorer.gif)
+![don't do drugs thx](/img/2020-07-01/smiley.gif)
 
 [git-tutorial]: https://learngitbranching.js.org/
 [github]: https://github.com/
