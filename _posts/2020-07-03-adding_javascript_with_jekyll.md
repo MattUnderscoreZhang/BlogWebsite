@@ -2,7 +2,7 @@
 layout: post
 title: "Adding Javascript to a Jekyll Page"
 date: 2020-07-03
-categories: web misc
+categories: web
 ---
 After [setting up my website]({% link _posts/2020-07-01-setting_up_website.md %}), I was interested in adding some interactive elements. In particular, I wanted to add some scripts written in [p5.js][p5.js].
 
