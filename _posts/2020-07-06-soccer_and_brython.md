@@ -6,7 +6,7 @@ categories: web
 ---
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.8.9/brython.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.8.9/brython_stdlib.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 <body onload="brython()"></body>
 
 Since most of my code is written in Python, I wanted a way of displaying it interactively on my website. For this purpose, I checked out the [Brython package][brython]. Brython emulates Python 3 in the browser, allowing you to run your code without major modifications.
