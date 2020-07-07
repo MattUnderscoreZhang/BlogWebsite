@@ -6,7 +6,7 @@ categories: web
 ---
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.8.9/brython.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.8.9/brython_stdlib.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <body onload="brython()"></body>
 
 Since most of my code is written in Python, I wanted a way of displaying it interactively on my website. For this purpose, I checked out the [Brython package][brython]. Brython emulates Python 3 in the browser, allowing you to run your code without major modifications.
@@ -42,7 +42,7 @@ document["mybutton"].bind("click", say_hi)
 </script>
 {% endhighlight %}
 
-Note that we've imported a library called browser, which contains web-specific functionality. Specifically, we're using browser.document, which allows us to access HTML elements from the webpage and edit them. To find out more, check out the [Brython tutorial][tutorial].
+Note that we've imported a library called browser, which contains web-specific functionality and is a part of Brython. Specifically, we're using browser.document, which allows us to access HTML elements from the webpage and edit them. To find out more, check out the [Brython tutorial][tutorial].
 
 Also add the following HTML code, so that your page knows there's a button called "mybutton" and a pre-formatted text area called "display".
 
@@ -70,7 +70,7 @@ document["mybutton"].bind("click", say_hi)
 
 As a more relevant case, take a look at the soccer script I posted below. You can watch a real time game of soccer in the browser, with an announcer! The soccer game goes until a side scores 10 points, because I don't know how soccer works. The two teams are the Flying Gorillas vs. the One Eyed Snakes, with the Gorillas at an advantage. There are three players on each team, one goalie, one defender, and one attacker. The names on one team all start with A and the names on the other team all start with B.
 
-Note that instead of print statements, I use HTML manipulation. Also, instead of using Python packages I use Javascript libraries. Plus, note the use of the Brython-specific keyword "async", which is necessary to make the script sleep.
+Note that instead of print statements, I use HTML manipulation. Also, instead of using Python packages I use Javascript libraries (also included with Brython). Plus, note the use of the Brython-specific keyword "async", which is necessary to make the script sleep.
 
 <pre id="code" style="height:500px"></pre>
 <script type="text/javascript">
