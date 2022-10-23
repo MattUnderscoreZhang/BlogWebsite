@@ -17,7 +17,7 @@ Example:
 
 Depending on the environment in which you're seeing the strings, the output should look pretty much identical to the input. You will get a randomized result each time you generate an output.
 
-What is this useful for? Why malware of course! Or pranking your friends. Maybe a combination of both? I denounce any legal liability.
+What is this useful for? Why malware of course! Or pranking your friends. Maybe a combination of both? I renounce any legal liability.
 
 # The Code
 
