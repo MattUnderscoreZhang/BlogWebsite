@@ -21,8 +21,14 @@ What is this useful for? Why malware of course! Or pranking your friends. Maybe 
 
 # The App
 
+<style>
+    textarea {
+        font-family: courier new;
+    }
+</style>
+
 <script>
-    async function test() {
+    async function obfuscateInput() {
         const url = "https://kvywb88030.execute-api.us-east-1.amazonaws.com/default/"
         var input = document.getElementById("input").value;
         const params = {
@@ -34,17 +40,23 @@ What is this useful for? Why malware of course! Or pranking your friends. Maybe 
         };
         const result = await fetch(url, params);
         const data = await result.json();
-        document.getElementById("output").innerHTML = data.body;
+        document.querySelector("#output").innerHTML = data.body
+    };
+    async function copyOutput() {
+        const output = document.querySelector("#output").innerHTML;
+        window.navigator.clipboard.writeText(output);
     };
     document.addEventListener("DOMContentLoaded", function() {
-        document.querySelector("button").addEventListener("click", test);
+        document.querySelector("#submit").addEventListener("click", obfuscateInput);
+        document.querySelector("#copy").addEventListener("click", copyOutput);
     });
 </script>
-<form>
-    <textarea id="input" rows="4" cols="50">Enter text to obfuscate here.</textarea>
-    <br>
-    <button type="button">Submit</button>
-    <br>
-    <br>
-    <textarea id="output" rows="4" cols="50" readonly>Output</textarea>
-</form>
+
+<textarea id="input" rows="4" style="width: 100%; max-width: 100%">
+Enter text to obfuscate here.
+</textarea>
+<button id="submit">Submit</button>
+<textarea id="output" rows="4" style="width: 100%; max-width: 100%" readonly>
+Output
+</textarea>
+<button id="copy">Copy to Clipboard</button>
