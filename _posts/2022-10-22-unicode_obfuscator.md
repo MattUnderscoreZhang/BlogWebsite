@@ -19,6 +19,10 @@ Depending on the environment in which you're seeing the strings, the output shou
 
 What is this useful for? Why malware of course! Or pranking your friends. Maybe a combination of both? I denounce any legal liability.
 
+# The Code
+
+[https://github.com/MattUnderscoreZhang/UnicodeObfuscation/](https://github.com/MattUnderscoreZhang/UnicodeObfuscation/)
+
 # The App
 
 <style>
