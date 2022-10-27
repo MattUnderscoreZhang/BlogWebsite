@@ -9,7 +9,7 @@ This is another quick webapp I made when testing out AWS services. This one uses
 
 # Why Is It Slow?
 
-Note that the first time you try to perform an action, it will take about a minute. This is because the lambda instance and database both have to cold start and boot up an instance. I'm not paying money to have these stay up lol.
+The page will take about a minute to load the table initially. This is because the lambda instance and database both have to cold start and boot up an instance. I'm not paying money to have these stay up lol.
 
 # The Code
 
@@ -81,7 +81,18 @@ Note that the first time you try to perform an action, it will take about a minu
         }
     }
 
-    document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('DOMContentLoaded', async () => {
+        // make waiting icon appear and disable submit button
+        document.getElementById("waiting").style.display = "block";
+        document.getElementById("submit").disabled = true;
+
+        await get_items();
+
+        // make waiting icon disappear and enable submit button
+        document.getElementById("waiting").style.display = "none";
+        document.getElementById("submit").disabled = false;
+
+        // add button functionality
         document.getElementById("submit").addEventListener("click", submit);
     });
 </script>
