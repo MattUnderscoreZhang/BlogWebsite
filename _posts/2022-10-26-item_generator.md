@@ -7,6 +7,8 @@ categories: web
 
 This is another quick webapp I made when testing out AWS services. This one uses an Aurora Serverless database, with a Lambda interface. I'm using the Function URL option on the Lambda instance, so that I don't have to go through the whole API creation process. This app allows you to either add random magical items to an inventory, or empty out the inventory. This is of course entirely useless, but there's not much you can do with a public webapp that writes to a single common database.
 
+# Why Is It Slow?
+
 Note that the first time you try to perform an action, it will take about a minute. This is because the lambda instance and database both have to cold start and boot up an instance. I'm not paying money to have these stay up lol.
 
 # The Code
@@ -52,7 +54,8 @@ Note that the first time you try to perform an action, it will take about a minu
         const response = await fetch(url, params);
         const data = await response.json();
          
-        var table = document.getElementById("table")
+        var table = document.getElementById("table");
+        table.innerHTML = "";
         fill_table(table, data);
     };
 
