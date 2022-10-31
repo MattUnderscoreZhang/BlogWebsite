@@ -1,0 +1,7 @@
+I was playing around with the Yelp API and with some mapping functionality, and created a simple webapp to show only cheap restaurants nearby with ratings above 4 stars.
+
+This didn't turn out to be interesting enough to publish, but I might come back later and add more functionality.
+
+Repo made private for now at https://github.com/MattUnderscoreZhang/Geofunctions.
+
+Abandoned on 10/30/2022.
