@@ -1,0 +1,9 @@
+# Nano Transformer
+
+Transformers used in NLP are way too big and clunky.
+
+I think there are many ways to reduce the computational cost, including by using a convolution-like approach. Instead of comparing each Q and V vector across the entire input at each layer of the transformer, we could instead compare each word with the ones around it in a window, perform a pooling, and repeat on following layers. This would capture the logical structure of language better (first seeing meaning in word phrases, then sentences, then paragraphs, then chapters etc.), and could also reduce the number of traning paramters by about a factor of a hundred.
+
+I still want to try this out, but don't have the time right now. I wouldn't be surprised if this research is already done by someone else soon.
+
+Abandoned on 10/31/2022.
