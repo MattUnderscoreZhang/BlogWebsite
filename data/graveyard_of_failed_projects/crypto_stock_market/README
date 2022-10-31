@@ -1,5 +1,9 @@
+Crypto Stock Market
+
 This is a stock trading game where you're trying to compete against a mix of bots and real humans.
 
-You trade completely worthless NFTs which are exaggerated knockoffs of the worst crypto-bro projects. Bots are buying and selling these assets to each other, causing dips and peaks in price. Each bot is a real algorithm trading on actual signals, including sentiment analysis on posts in the chatroom. Posts are generated via chatbots trained exclusively on r/wallstreetbets. Players can write their own algorithms with an API or use the in-game dashboard to buy and sell NFTs.
+You trade completely worthless NFTs which are exaggerated knockoffs of the worst crypto-bro projects. Bots are buying and selling these assets to each other, causing dips and peaks in price. Each bot is a real algorithm trading on actual signals, including sentiment analysis on posts in the chatroom. The bots generate posts using language models trained exclusively on r/wallstreetbets. Players can write their own algorithms with an API or use the in-game dashboard to buy and sell NFTs.
 
-Transactions occur via a cryptocurrency called ScamCoin. You get some by joining, but can also buy more from the central bank. You can also cash out by selling to the central bank. The central bank rates can fluctuate.
+Transactions occur via a cryptocurrency called ScamCoin. You get some by joining, but can also buy more from the central bank or another player. You can also cash out at a greatly reduced rate by selling to the central bank. The central bank rates can fluctuate.
+
+Abandoned on 10/31/2022.

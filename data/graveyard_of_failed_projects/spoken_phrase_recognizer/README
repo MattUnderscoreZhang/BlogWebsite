@@ -1,3 +1,9 @@
+Spoken Phrase Recognizer
+
 I was thinking of making a spoken phrase recognition training tool.
 
 The idea is that you could upload a few samples of you speaking, along with credentials for some compute environment. I would then train the net for you, and you can either download the weights to use yourself or use my webapp API and let me host the phrase recognition app for a fee.
+
+May still come back and revive this project later. Just have other things to focus on right now.
+
+Abandoned on 10/31/2022.

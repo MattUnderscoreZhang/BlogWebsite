@@ -1,0 +1,11 @@
+write word2vec explanation blog post
+    ML is all about representing data as other data
+    how to represent words as numbers we can work with?
+    can one hot encode everything, but this is obviously a bad idea
+    reduce dimensionality by encoding synonyms the same? some information loss
+    combine concepts to create new ones
+    simple math with projection (dot products), subtraction and addition
+    pytorch implementation of automatic training on input books
+    show animation of vectors spreading out
+    compare training with two types of vectors (u and v) as opposed to just one
+    train on recipes to see if I can find relations between ingredients
