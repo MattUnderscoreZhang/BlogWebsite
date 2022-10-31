@@ -1,0 +1,9 @@
+# Websocket Test Game
+
+2-player realtime game
+    needs to have real-time updates with websockets
+    https://www.geeksforgeeks.org/realtime-chat-app-using-django/
+    "https://www.honeybadger.io/blog/django-channels-websockets-chat/",
+    track which websockets are open, and assign new login codes not on list
+
+Abandoned on 10/31/2022.
