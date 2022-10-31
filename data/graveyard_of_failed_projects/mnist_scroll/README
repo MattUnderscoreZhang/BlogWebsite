@@ -1,0 +1,9 @@
+# MNIST Scroll
+
+Basically wanted to have a nice way to scroll through my website. Imagine if the section headers were MNIST digits that morphed (e.g. 1 -> 2) as you scrolled down the page, with some accompanying background color effects.
+
+MNIST scroll to morph
+    have digits shift in size, orientation, and color between scrolls
+    use for interactive website as a section selector on the main page
+
+Abandoned on 10/31/2022.
