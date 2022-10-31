@@ -1,0 +1,21 @@
+spoken phrase recognizer
+    can train and download trained model, or keep trained model on my cloud and access via API for a fee
+    pre-research
+        "https://betterprogramming.pub/building-an-alexa-or-siri-equivalent-bot-in-python-ea07ed001445"
+    part 1 - voice transcription
+        take voice input and save in textbox as text
+    part 2 - AI conversation
+        use OAuth2 to have someone log on to their GPT-3 account via my webpage
+        send transcribed voice text and send to GPT-3
+        have GPT-3 responses be read (can generate speech using tortoise-tts)
+    part 3+ - text blogpost(s) about how to do training
+        look up how to train audio recognizer
+        speech_clips repo to cut up generated speech from tortoise-tts
+        create an RNN that trains to recognize a single recorded phrase - generate tons of spoken text for training
+    part 4 - python app to upload a few recordings of a phrase and generate a passphrase recognizer
+        make training run on client's computer
+        log on to user's AWS account to run training (or Lambda account, or Snowflake? Google? add more)
+        first 100 uses are free, then 1 penny for each call after
+        note that this is too slow for anyone to actually want to use this (first have to finish recording, send, then get back)
+        download link to Python repo for common use case demos (upload recording, record by holding down spacebar, record with microphone button that times out where you have to click submit)
+        can add repos for other languages in the future if people use this

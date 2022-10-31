@@ -1,0 +1,3 @@
+I was thinking of making a spoken phrase recognition training tool.
+
+The idea is that you could upload a few samples of you speaking, along with credentials for some compute environment. I would then train the net for you, and you can either download the weights to use yourself or use my webapp API and let me host the phrase recognition app for a fee.
