@@ -7,7 +7,24 @@ categories: python
 
 When I first heard about test driven development I wasn't entirely sold on it. I mean, writing the unit tests for a project before you start writing the code? Unit tests are time consuming, have to cover a million different edge cases, and often depend on the exact structure of the code, I thought. However, I recently watched a [video on YouTube](https://www.youtube.com/watch?v=Bq_oz7nCNUA) that changed the way I saw things.
 
-{% include youtubePlayer.html id="Bq_oz7nCNUA" %}
+<style>
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>
+{% include jekyll-embed-video/youtubePlayer.html id="Bq_oz7nCNUA" %}
 
 Basically, the gentleman in the video argues that the problems associated with test driven development often occur because people are using the technique incorrectly. If you have to know the structure of your code in order to write tests, then your tests are coupled too strongly to your implementation. Similarly, if you find that changing code affects many unit tests, then the tests are not abstract enough. In this situation you've built an ossified shell of tests around your code that ensures the code can not change in implementation details. In his words, you're now simply testing that the code you've written is in fact the code that you've written.
 
