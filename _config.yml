@@ -28,9 +28,9 @@ github_username: MattUnderscoreZhang
 
 # Build settings
 theme: minima
+#markdown: kramdown
 plugins:
   - jekyll-feed
-  - jektex
 
 # Exclude from processing.
 # The following items will not be processed, by default.
