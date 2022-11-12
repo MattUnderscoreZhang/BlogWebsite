@@ -30,6 +30,7 @@ github_username: MattUnderscoreZhang
 theme: minima
 plugins:
   - jekyll-feed
+  - jektex
 
 # Exclude from processing.
 # The following items will not be processed, by default.
