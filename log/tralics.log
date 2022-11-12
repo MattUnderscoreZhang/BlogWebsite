@@ -1,0 +1,17 @@
+This is tralics 2.15.1, a LaTeX to XML translator, running on EEM210LMBP-1
+Copyright INRIA/MIAOU/APICS/MARELLE 2002-2012, Jos\'e Grimm
+Licensed under the CeCILL Free Software Licensing Agreement
+Starting translation of file /var/folders/4r/s891p2fj469drsn0s4b4cgy80000gn/T/polytex20221112-14204-42o8su.tex.
+Dummy default configuration file used.
+Error signaled at line 35 of file /var/folders/4r/s891p2fj469drsn0s4b4cgy80000gn/T/polytex20221112-14204-42o8su.tex:
+Missing dollar not inserted, token ignored: {Character _ of catcode 8}.
+Bib stats: seen 0 entries.
+Math stats: formulas 0, kernels 0, trivial 0, \mbox 0, large 0, small 0.
+Buffer realloc 3, string 1385, size 13732, merge 0
+Macros created 198, deleted 10; hash size 2388; foonotes 0.
+Save stack +18 -18.
+Attribute list search 1516(1505) found 1074 in 1123 elements (1120 at boot).
+Number of ref 0, of used labels 0, of defined labels 0, of ext. ref. 0.
+Output written on /var/folders/4r/s891p2fj469drsn0s4b4cgy80000gn/T/polytex20221112-14204-42o8su.xml (469 bytes).
+There was one error.
+(For more information, see transcript file /var/folders/4r/s891p2fj469drsn0s4b4cgy80000gn/T/polytex20221112-14204-42o8su.log)

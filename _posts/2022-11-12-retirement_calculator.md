@@ -3,9 +3,15 @@ layout: post
 title: "Retirement Calculator"
 date: 2022-11-12
 categories: python, finance
+<!--usemathjax: true-->
 ---
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        TeX: { equationNumbers: { autoNumber: "AMS" } }
+    });
+</script>
+<script type="text/javascript" async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 Here's a simple calculator that lets you know how long you have to work before you can retire. We assume that you have the same inflation-adjusted cost of living throughout your whole life, and that your earnings likewise stay constant (adjusted for inflation) until retirement.
 
@@ -13,59 +19,59 @@ To figure out how long you have to work, we solve a simple equality between the 
 
 We use the following variables. All monetary values are in current dollars.
 
-\( S_0 = \) current savings
+$$ S_0 = $$ current savings
 
-\( I = \) after-tax income per year
+$$ I = $$ after-tax income per year
 
-\( E = \) expenditures per year
+$$ E = $$ expenditures per year
 
-\( L = \) expected remaining life expectancy
+$$ L = $$ expected remaining life expectancy
 
-\( y_B = \) years before retirement, from now
+$$ y_B = $$ years before retirement, from now
 
-\( y_A \equiv L - y_B = \) years to live after retirement
+$$ y_A \equiv L - y_B = $$ years to live after retirement
 
-\( r = \) average rate of return on investments
+$$ r = $$ average rate of return on investments
 
-\( i = \) average inflation
+$$ i = $$ average inflation
 
-\( R = \) expected annual retirement money (401k, social security, medicare, etc.)
+$$ R = $$ expected annual retirement money (401k, social security, medicare, etc.)
 
 ## The amount you will save
 
-This is a simple \(y_B\)-year growing annuity where income and expenditures keep pace with inflation.
+This is a simple $$y_B$$-year growing annuity where income and expenditures keep pace with inflation.
 
-We keep the equations simple by assuming that money is deposited or withdrawn at the end of every year. In order to model a more realistic constant withdraw/deposit rate, we could simply replace the \(r\) and \(i\) values with the continuously compounded rates.
+We keep the equations simple by assuming that money is deposited or withdrawn at the end of every year. In order to model a more realistic constant withdraw/deposit rate, we could simply replace the $$r$$ and $$i$$ values with the continuously compounded rates.
 
-\(NPV = S_0 + \frac{(I - E)}{r - i} (1 - (\frac{1 + i}{1 + r}) ^ {y_B})\) 
+$$ NPV = S_0 + \frac{(I - E)}{r - i} (1 - (\frac{1 + i}{1 + r}) ^ {y_B}) $$ 
 
 ## The amount you will spend
 
-This is a \(y_A\)-year growing annuity, starting with an expenditure of \(E (1 + i) ^ {y_B}\) on the first year, and with the final result shifted back by \(y_B\) years.
+This is a $$y_A$$-year growing annuity, starting with an expenditure of $$E (1 + i) ^ {y_B}$$ on the first year, and with the final result shifted back by $$y_B$$ years.
 
-\( NPV = \frac{(E - R) (1 + i) ^ {y_B}}{r - i} (1 - (\frac{1 + i}{1 + r}) ^ {y_A}) (\frac{1 + i}{1 + r}) ^ {y_B} \)
+$$ NPV = \frac{(E - R) (1 + i) ^ {y_B}}{r - i} (1 - (\frac{1 + i}{1 + r}) ^ {y_A}) (\frac{1 + i}{1 + r}) ^ {y_B} $$
 
-## Solving for \(y_B\)
+## Solving for $$y_B$$
 
 Now we can figure out the number of years you will need to work before retiring:
 
-Define \( x \equiv \frac{1 + i}{1 + r} \).
+Define $$ x \equiv \frac{1 + i}{1 + r} $$.
 
-\( S_0 + \frac{(I - E)}{r - i} (1 - x ^ {y_B}) = \frac{(E - R) (1 + i) ^ {y_B}}{r - i} (1 - x ^ {y_A}) x ^ {y_B} \)
+$$ S_0 + \frac{(I - E)}{r - i} (1 - x ^ {y_B}) = \frac{(E - R) (1 + i) ^ {y_B}}{r - i} (1 - x ^ {y_A}) x ^ {y_B} $$
 
-\( x ^ {y_A} \equiv x ^ L / x ^ {y_B} \)
+$$ x ^ {y_A} \equiv x ^ L / x ^ {y_B} $$
 
-\( S_0 + \frac{(I - E)}{r - i} (1 - x ^ {y_B}) = \frac{(E - R) (1 + i) ^ {y_B}}{r - i} (x ^ {y_B} - x ^ L) \)
+$$ S_0 + \frac{(I - E)}{r - i} (1 - x ^ {y_B}) = \frac{(E - R) (1 + i) ^ {y_B}}{r - i} (x ^ {y_B} - x ^ L) $$
 
-\( S_0 + \frac{(I - E)}{r - i} = \frac{(E - R) (1 + i) ^ {y_B}}{r - i} (x ^ {y_B} - x ^ L) + \frac{(I - E)}{r - i} x ^ {y_B}\)
+$$ S_0 + \frac{(I - E)}{r - i} = \frac{(E - R) (1 + i) ^ {y_B}}{r - i} (x ^ {y_B} - x ^ L) + \frac{(I - E)}{r - i} x ^ {y_B}$$
 
-\( S_0 + \frac{(I - E)}{r - i} = (\frac{(I - E)}{r - i} + \frac{(E - R) (1 + i) ^ {y_B}}{r - i}) x ^ {y_B} - \frac{(E - R) (1 + i) ^ {y_B}}{r - i} x ^ L \)
+$$ S_0 + \frac{(I - E)}{r - i} = (\frac{(I - E)}{r - i} + \frac{(E - R) (1 + i) ^ {y_B}}{r - i}) x ^ {y_B} - \frac{(E - R) (1 + i) ^ {y_B}}{r - i} x ^ L $$
 
-\( S_0 (r - i) + (I - E) = ((I - E) + (E - R) (1 + i) ^ {y_B}) x ^ {y_B} - (E - R) (1 + i) ^ {y_B} x ^ L \)
+$$ S_0 (r - i) + (I - E) = ((I - E) + (E - R) (1 + i) ^ {y_B}) x ^ {y_B} - (E - R) (1 + i) ^ {y_B} x ^ L $$
 
-\( S_0 (r - i) + (I - E) = (I - E) x ^ {y_B} + (E - R) (x + i x) ^ {y_B} - (E - R) x ^ L (1 + i) ^ {y_B} \)
+$$ S_0 (r - i) + (I - E) = (I - E) x ^ {y_B} + (E - R) (x + i x) ^ {y_B} - (E - R) x ^ L (1 + i) ^ {y_B} $$
 
-We see this is a polynomial of order y_B, meaning there should be \( y_B \) solutions to this equation. Common sense tells us that exactly one of those solutions should be purely real (assuming you are able to retire). We can solve for \( y_B \) using a simple Newton-Raphson method.
+We see this is a polynomial of order y_B, meaning there should be $$ y_B $$ solutions to this equation. Common sense tells us that exactly one of those solutions should be purely real (assuming you are able to retire). We can solve for $$ y_B $$ using a simple Newton-Raphson method.
 
 ## The Calculator
 
