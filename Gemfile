@@ -9,6 +9,8 @@ source "https://rubygems.org"
 # Happy Jekylling!
 #gem "jekyll", "~> 4.1.1"
 
+ruby "3.1.2"
+
 # Jekyll themes
 gem 'jekyll-remote-theme'
 gem "jekyll-theme-clean-blog"
