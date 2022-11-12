@@ -2,7 +2,7 @@
 layout: post
 title: "Using Brython to Run Python in the Browser"
 date: 2020-07-06
-categories: web, python
+categories: [Web, Python]
 ---
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.8.9/brython.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.8.9/brython_stdlib.js"></script>

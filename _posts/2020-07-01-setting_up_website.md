@@ -2,7 +2,7 @@
 layout: post
 title:  "Setting Up a Website with GitHub and Jekyll"
 date:   2020-07-01 12:54:23 -0500
-categories: web
+categories: Web
 ---
 I made this website because I wanted a place to put my projects and code snippets. It's also a great resume booster to have all your stuff in one place like this. Plus, having your own website is a great conversation starter at parties, maybe? If I ever get invited to a party I'll test it out and let you know!
 

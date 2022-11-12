@@ -2,7 +2,7 @@
 layout: post
 title: "Behavior Driven Development with pytest-bdd"
 date: 2022-10-31
-categories: python
+categories: Python
 ---
 
 When I first heard about test driven development I wasn't entirely sold on it. I mean, writing the unit tests for a project before you start writing the code? Unit tests are time consuming, have to cover a million different edge cases, and often depend on the exact structure of the code, I thought. However, I recently watched a [video on YouTube](https://www.youtube.com/watch?v=Bq_oz7nCNUA) that changed the way I saw things.

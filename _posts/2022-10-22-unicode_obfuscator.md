@@ -2,7 +2,7 @@
 layout: post
 title: "Unicode Obfuscator webapp with AWS Lambda"
 date: 2022-10-22
-categories: web
+categories: Web
 ---
 
 This is a quick webapp I created to test out AWS Lambda. The purpose is to take an input string and obfuscate it by inserting zero-width unicode characters, and by replacing letters with lookalike characters.
