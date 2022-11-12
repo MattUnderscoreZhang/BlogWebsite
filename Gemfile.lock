@@ -16,6 +16,7 @@ GEM
     colorator (1.1.0)
     commonmarker (0.23.6)
     concurrent-ruby (1.1.10)
+    digest (3.1.0)
     dnsruby (1.61.9)
       simpleidn (~> 0.1)
     em-websocket (0.5.3)
@@ -88,9 +89,14 @@ GEM
     html-pipeline (2.14.3)
       activesupport (>= 2)
       nokogiri (>= 1.4)
+    htmlentities (4.3.4)
     http_parser.rb (0.8.0)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
+    jektex (0.0.8)
+      digest (~> 3.0, >= 3.0.0)
+      execjs (~> 2.8, >= 2.8.1)
+      htmlentities (~> 4.3, >= 4.3.4)
     jekyll (3.9.2)
       addressable (~> 2.4)
       colorator (~> 1.0)
@@ -262,6 +268,7 @@ PLATFORMS
 DEPENDENCIES
   faraday-retry
   github-pages
+  jektex
   jekyll-feed (~> 0.12)
   jekyll-remote-theme
   jekyll-theme-clean-blog
