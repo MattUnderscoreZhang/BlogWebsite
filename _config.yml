@@ -28,7 +28,7 @@ github_username: MattUnderscoreZhang
 
 # Build settings
 theme: minima
-#markdown: kramdown
+markdown: kramdown
 plugins:
   - jekyll-feed
 

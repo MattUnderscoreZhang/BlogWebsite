@@ -3,15 +3,15 @@ layout: post
 title: "Retirement Calculator"
 date: 2022-11-12
 categories: python, finance
-<!--usemathjax: true-->
+usemath: true
 ---
 
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        TeX: { equationNumbers: { autoNumber: "AMS" } }
-    });
-</script>
-<script type="text/javascript" async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<!--<script type="text/x-mathjax-config">-->
+    <!--MathJax.Hub.Config({-->
+        <!--TeX: { equationNumbers: { autoNumber: "AMS" } }-->
+    <!--});-->
+<!--</script>-->
+<!--<script type="text/javascript" async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>-->
 
 Here's a simple calculator that lets you know how long you have to work before you can retire. We assume that you have the same inflation-adjusted cost of living throughout your whole life, and that your earnings likewise stay constant (adjusted for inflation) until retirement.
 
