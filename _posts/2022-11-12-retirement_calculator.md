@@ -116,7 +116,7 @@ Please input all values in current dollars.
         </tr>
         <tr>
             <td>
-                <label for="i">Average Interest Rate</label>
+                <label for="i">Average Inflation</label>
             </td>
             <td>
                 <input type="text" class="form-control" id="i" value="0.025">
