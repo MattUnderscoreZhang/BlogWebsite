@@ -262,12 +262,12 @@ PLATFORMS
 DEPENDENCIES
   faraday-retry
   github-pages
-  jekyll-feed (~> 0.12)
+  jekyll-feed
   jekyll-remote-theme
   jekyll-theme-clean-blog
-  tzinfo (~> 1.2)
+  tzinfo
   tzinfo-data
-  wdm (~> 0.1.1)
+  wdm
   webrick
 
 BUNDLED WITH
