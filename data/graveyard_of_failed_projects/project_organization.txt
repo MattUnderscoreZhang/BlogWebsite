@@ -1,0 +1,65 @@
+# Project Organization
+
+I organize my own projects in a hierarchical way, where I start from a high-level objective, determine the first subgoal towards that objective, determine another subgoal for the first subgoal, and so on. Timeboxing (maximum time before goal re-evaluation) and minimum commitment times (min time before I can abandon goal) are applied at each level.
+
+I was thinking if I can create a project management tool based around this idea, it may be possible to create an organization that doesn't require any managers. Groups at each subgoal level can decide on their own representatives, who go to meetings with other subgoal leads when timeboxes run out. If goals are set properly, this could mean that high-level meetings only need to occur every few months. Furthermore, compensation could be determined when deciding on subgoals, and anybody can choose to complete any bottom-level goal, thus making pay directly tied to performance.
+
+# Ideas
+
+project organization project
+    description
+        project organization app that reflects the way I manage my own projects
+        just for my own use at first
+        can get my team to try it out, then maybe my company if it does well
+    features
+        user makes project and becomes project owner (there can only be one owner, but it can be transfered)
+            - can send invites to other users to join the project
+            - either via email or on app
+            - can invite other project to become subproject, which adds all its users to the new project
+        project is composed of goals
+            - top goal is largest in scope (what the world would gain from the project's existence)
+            - each goal below that is something that needs to be done to help complete the higher level goal
+            - goes all the way down to small projects that take a day or two
+        goal contains
+            - description (100 char max string) - should be motivation for what goal you're trying to accomplish
+            - list of requirements (100 char max each)
+            - active subgoals
+            - up to two inactive subgoals (warning on creation)
+            - list of people on the goal
+            - can see which people are on each subgoal, or unassigned
+            - each person can only be on one subgoal
+            - "re-evaluate on" date (will automatically be auto-incremented up to 6 months for each re-evaulation meeting without change to goal)
+            - project leads at each level are the ones to decide whether to change goals
+            - each goal also has an unlocked scratchpad that everybody can use to keep short notes on (auto-folded, 20 lines max, vim option in profile settings)
+            - links to Google Drive, Dropbox, etc.
+        person view
+            - can be seen by anybody on the project
+            - single assigned goal, with visible motivation from top to bottom
+        project view
+            - can be seen by anyone on the project
+            - shows tree of all active and inactive goals, with people on each goal
+        chat notifications
+            - chat bubble shows up at each project level, and can easily be seen on the person view
+            - project view shows all ongoing chats across the project
+            - one-button toggle to show only chats that mention your name
+            - individual chat also available
+    requires
+        - user accounts
+        - realtime updates (not necessary at first)
+        - chat capabilities
+    subgoals
+        [learning] create interactive display for goals with Streamlit based on JSON file
+        interactive edit/add goal with Streamlit
+            - edits JSON file on disk
+        interactive display based on local database
+            - handle database reading and writing
+        host with streamlit and Supabase
+            - access my project management from anywhere
+        add user accounts
+            - invite friends to make accounts
+        add ability to invite people to projects
+            - have my team try out
+        add chat functionality
+            - show to investors?
+
+Abandoned on 11/20/2022.

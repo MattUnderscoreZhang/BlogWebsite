@@ -1,3 +1,13 @@
+# NLP Course
+
+I was interested in creating a full NLP course, partly for an ML journal club.
+
+The first course would have demoed some interesting visualizations and manipulations of word vectors.
+
+Quickly realized this would not be worth the time.
+
+# Ideas
+
 write word2vec explanation blog post
     ML is all about representing data as other data
     how to represent words as numbers we can work with?
@@ -9,3 +19,5 @@ write word2vec explanation blog post
     show animation of vectors spreading out
     compare training with two types of vectors (u and v) as opposed to just one
     train on recipes to see if I can find relations between ingredients
+
+Abandoned on 10/31/2022.

@@ -1,0 +1,19 @@
+# Tax Selector
+
+a tax can be thought of as a mandatory investment with -100% return
+    maybe the government could allow investment in risky but nationally important startups to count towards tax?
+    this could effectively act as a slightly less negative investment, which could allow for more nuanced tax policy
+
+website where you can select government or non-government organizations or projects to donate towards
+    your owed tax each year is calculated, and you have to donate at least that much to different projects
+    this allows people to decide what to fund, instead of going through a congressional budget
+    each org/project states how much funding they'd like for the coming year, and can get up to that much money
+    these donations count for 100% tax write-offs
+    can allow for additional donations beyond required taxes
+    there can be a percentage of the budget determined by congress, and the remainder given by individual choice
+    startups trying to develop items of national importance can be listed on here
+    this removes a lot of power from lobbyists when it comes to what gets funded
+    decouples a lot of economic issues from social issues when it comes to voting for politicians
+    can create a prototype and pitch to local or state government
+
+Abandoned on 11/20/2022.

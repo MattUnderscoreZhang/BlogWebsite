@@ -1,0 +1,18 @@
+# Life Calendar App
+
+This calendar would let you see the progress of your life in weeks, as described in this post: https://waitbutwhy.com/2014/05/life-weeks.html.
+
+I abandoned this project because it's already been done.
+
+life calendar app
+    prompt to enter one thing in each category each day
+        what progress did you make towards a goal?
+        what interesting experience did you have?
+        misc notable event
+    on each week, select one thing from each category as representative
+        can add new item
+    hover over blocks on calendars to see weeks or days
+    views based on life, year, or month
+    can pin current goal at top
+
+Abandoned on 11/20/2022.

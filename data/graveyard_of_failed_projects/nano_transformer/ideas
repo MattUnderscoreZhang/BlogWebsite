@@ -1,9 +1,0 @@
-try out an ELMo architecture that combines LSTMs so there are fewer per layer
-    "https://www.analyticsvidhya.com/blog/2019/03/learn-to-use-elmo-to-extract-features-from-text/#:~:text=ELMo%20is%20a%20novel%20way,as%20well%20as%20the%20industry."
-    maybe let the neural net itself indicate the start and end of phrases, to be combined into one at the next layer
-    maybe train on wikipedia and split at sentences, then paragraphs, then sections, then whole articles
-    maybe replacing the bottom-most layer can do style transfer
-    this can be a big improvement in computational power on transformers, which have to dot Q.K across the entire input, rather than surrounding N words
-    this can also let us get rid of the position encoding
-Wikipedia dataloader
-    use python-bdd to write BDD tests

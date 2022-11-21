@@ -1,3 +1,13 @@
+# Crypto Stock Market
+
+This is a stock trading game where you're trying to compete against a mix of bots and real humans.
+
+You trade completely worthless NFTs which are exaggerated knockoffs of the worst crypto-bro projects. Bots are buying and selling these assets to each other, causing dips and peaks in price. Each bot is a real algorithm trading on actual signals, including sentiment analysis on posts in the chatroom. The bots generate posts using language models trained exclusively on r/wallstreetbets. Players can write their own algorithms with an API or use the in-game dashboard to buy and sell NFTs.
+
+Transactions occur via a cryptocurrency called ScamCoin. You get some by joining, but can also buy more from the central bank or another player. You can also cash out at a greatly reduced rate by selling to the central bank. The central bank rates can fluctuate.
+
+# Ideas
+
 stock market MMO
     notes
         crypto and other dubious investment objects as a "wasted money reservoir" that inflate and shrink in relation to the velocity of money in the economy?
@@ -17,3 +27,11 @@ stock market MMO
         will need to make a public API, have user accounts, use a crypto blockchain, have an API for buy/sell, and a UI for buy/sell
     before starting
         need to think through how this works in the end, to make sure I'm learning the right things from these projects
+
+# Prep Projects
+
+bot verbal spouting (text bot training and deployment)
+    have two chatbots, one trained exclusively off of r/chad_vs_virigin comments, and one off of lolcats
+    make them talk to each other in real time when you push a button
+
+Abandoned on 10/31/2022.
