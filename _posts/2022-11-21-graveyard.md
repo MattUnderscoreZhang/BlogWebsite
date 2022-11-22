@@ -15,19 +15,20 @@ $(document).ready(function() {
 
     function get_random_project() {
         var directory = "/data/graveyard_of_abandoned_projects/"
-        var xmlHttp = new XMLHttpRequest();
-        xmlHttp.open('GET', directory, false); // false for synchronous request
-        xmlHttp.send(null);
-        var ret = xmlHttp.responseText;
-        var fileList = ret.split('\<A HREF=\"').slice(5);
-        for (var i = 0; i < fileList.length; i++) {
-            fileList[i] = fileList[i].split('\"')[0];
-        }
-        while (newIndex == currentIndex) {
-            newIndex = Math.floor(Math.random() * fileList.length);
-        }
-        var randomFile = fileList[newIndex];
-        currentIndex = newIndex;
+        <!--var xmlHttp = new XMLHttpRequest();-->
+        <!--xmlHttp.open('GET', directory, false); // false for synchronous request-->
+        <!--xmlHttp.send(null);-->
+        <!--var ret = xmlHttp.responseText;-->
+        <!--var fileList = ret.split('\<A HREF=\"').slice(5);-->
+        <!--for (var i = 0; i < fileList.length; i++) {-->
+            <!--fileList[i] = fileList[i].split('\"')[0];-->
+        <!--}-->
+        <!--while (newIndex == currentIndex) {-->
+            <!--newIndex = Math.floor(Math.random() * fileList.length);-->
+        <!--}-->
+        <!--var randomFile = fileList[newIndex];-->
+        <!--currentIndex = newIndex;-->
+        var randomFile = "life_calendar.txt";
         $("#output").load(directory + randomFile);
     };
 
@@ -41,4 +42,3 @@ $(document).ready(function() {
 <br>
 <br>
 <textarea id="output" rows="50" style="width: 100%; max-width: 100%; padding: 10px" readonly></textarea>
-<!--<plaintext id="output" style="width: 100%; max-width: 100%"></plaintext>-->
