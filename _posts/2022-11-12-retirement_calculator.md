@@ -165,6 +165,6 @@ Please input all values in current dollars.
     </table>
 </div>
 <button id="submit">Submit</button>
-<textarea id="output" rows="4" style="width: 95%; max-width: 95%" readonly>
+<textarea id="output" rows="4" style="width: 90%; max-width: 90%" readonly>
 Output
 </textarea>
