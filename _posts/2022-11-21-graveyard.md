@@ -10,8 +10,18 @@ As somebody whose ambitions overshadow his abilities, I think up a lot of projec
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
-    var currentIndex = -1;
-    var newIndex = -1;
+    /* randomize array in-place using Durstenfeld shuffle algorithm */
+    function shuffleArray(array) {
+        for (var i = array.length - 1; i > 0; i--) {
+            var j = Math.floor(Math.random() * (i + 1));
+            var temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+        }
+    }
+
+    var indices = null;
+    var index_n = 0;
 
     function get_random_project() {
         const directory = "/data/graveyard_of_abandoned_projects/"
@@ -23,11 +33,12 @@ $(document).ready(function() {
         for (var i = 0; i < fileNames.length; i++) {
             fileNames[i] = fileNames[i].split('\"')[0];
         }
-        while (newIndex == currentIndex) {
-            newIndex = Math.floor(Math.random() * fileNames.length);
+        if (indices == null) {
+            indices = Array.from(Array(fileNames.length).keys());
+            shuffleArray(indices);
         }
-        const randomFile = fileNames[newIndex];
-        currentIndex = newIndex;
+        const randomFile = fileNames[indices[index_n]];
+        index_n = (index_n + 1) % indices.length;
         $("#output").load(directory + randomFile);
     };
 
@@ -37,11 +48,12 @@ $(document).ready(function() {
         const response = await fetch('https://api.github.com/repos/MattUnderscoreZhang/MattUnderscoreZhang.github.io/contents' + directory);
         const files = await response.json();
         var fileNames = files.map(function(file) {return file.name});
-        while (newIndex == currentIndex) {
-            newIndex = Math.floor(Math.random() * fileNames.length);
+        if (indices == null) {
+            indices = Array.from(Array(fileNames.length).keys());
+            shuffleArray(indices);
         }
-        var randomFile = fileNames[newIndex];
-        currentIndex = newIndex;
+        const randomFile = fileNames[indices[index_n]];
+        index_n = (index_n + 1) % indices.length;
         $("#output").load(directory + randomFile);
     };
 
