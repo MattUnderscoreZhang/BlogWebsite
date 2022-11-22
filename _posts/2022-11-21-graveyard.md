@@ -10,6 +10,8 @@ As somebody whose ambitions overshadow his abilities, I think up a lot of projec
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
+    var currentIndex = -1;
+    var newIndex = -1;
     $("#randomize").click(function() {
         var directory = "/data/graveyard_of_abandoned_projects/"
         var xmlHttp = new XMLHttpRequest();
@@ -20,7 +22,11 @@ $(document).ready(function() {
         for (var i = 0; i < fileList.length; i++) {
             fileList[i] = fileList[i].split('\"')[0];
         }
-        var randomFile = fileList[Math.floor(Math.random() * fileList.length)];
+        while (newIndex == currentIndex) {
+            newIndex = Math.floor(Math.random() * fileList.length);
+        }
+        var randomFile = fileList[newIndex];
+        currentIndex = newIndex;
         $("#output").load("/data/graveyard_of_abandoned_projects/" + randomFile);
     });
 })
