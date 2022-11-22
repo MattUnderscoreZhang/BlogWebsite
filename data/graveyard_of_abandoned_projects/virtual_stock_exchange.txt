@@ -1,0 +1,22 @@
+# Virtual Stocks
+
+This was an idea I was running through about how a trading platform could use the fact that customers keep their stocks on the platform as a way to make money. Similar to how banks can use customer deposits to lend and invest, I wanted to see if there was a way to do something similar with stocks.
+
+One of my main ideas was to let the customers trade "virtual stocks" that could be bought and sold commission-free, and which gave dividends like real stocks along with some interest, but which didn't necessarily correspond to real underlying assets. In this situation, the customers would deposit funds into the platform and act as though they were actually trading stocks, but money managers would actually be using those funds separately. The idea there was to bet that we could handle funds better than our customers (get a better rate of return), while still giving them control over their portfolios. This idea was probably too risky though, and sounded like it would have a lot of legal issues.
+
+My other idea was to sell put options using customer stocks, but after talking to a friend about this, I couldn't find a way to make this go anywhere.
+
+# Notes
+
+virtual stocks on an exchange
+    use a customer's stocks for puts when they're in the account
+        customer can get commission-free trades or interest from letting us do this
+    customer gets dividends and can sell or withdraw stocks whenever they want
+        if they sell, we give them money at market rate
+        if they withdraw, we buy stocks immediately to replace the ones we've loaned out
+    hope is to make enough money off loaning out stocks to cover possible losses from customers selling high
+    need to calculate whether this is a good idea
+        how to calculate fair loan price for puts?
+        how to calculate possible loss from selling at high point?
+
+Abandoned on 11/20/2022.

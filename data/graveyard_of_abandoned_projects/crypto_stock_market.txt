@@ -1,0 +1,37 @@
+# Crypto Stock Market
+
+This is a stock trading game where you're trying to compete against a mix of bots and real humans.
+
+It leans into the absolute absurdity of Web3 by having players trade completely worthless NFTs which are exaggerated knockoffs of the dumbest crypto-bro projects. Bots are buying and selling these assets to each other, causing dips and peaks in price. Each bot is a real algorithm trading on actual signals, including natural language processing on posts in the game forums. The bots generate posts using language models trained exclusively on r/wallstreetbets. Players can write their own algorithms with an API or use the in-game dashboard to buy and sell NFTs.
+
+Transactions occur via a cryptocurrency called ScamCoin. You get some by joining, but can also buy more from the central bank or another player. You can also cash out at a greatly reduced rate by selling to the central bank. The central bank rates can fluctuate.
+
+# Notes
+
+stock market MMO
+    notes
+        crypto and other dubious investment objects as a "wasted money reservoir" that inflate and shrink in relation to the velocity of money in the economy?
+        economic game about trying to get the next bubble before it inflates
+        everybody buying and selling from each other at once
+        fake stock market - could have bots simulating other players at first, to make it really immersive to join
+        bots actually do respond to signals, but the algorithms used are completely unknown to the players
+        it's also unclear how many bots there are in relation to the players, to make it hard to know how much player actions have an effect
+        a forum with auto generated posts from bots talking to each other, which you have to distinguish from real human posts
+        all the assets are worthless auto-generated NFT project knockoffs
+        write blog post on Reddit inviting people to come join
+        once the player base is large enough, actually have players trade real NFTs (exchangeable for cryptocurrency)
+        so these people are betting cryptocurrency on a virtual NFT market, where I make money via a brokerage fee
+        let new players have a certain inventory of NFTs for free, and make more packets purchaseable when purchased with crypto
+        give players an API so they can write scripts to trade NFTs
+    skills
+        will need to make a public API, have user accounts, use a crypto blockchain, have an API for buy/sell, and a UI for buy/sell
+    before starting
+        need to think through how this works in the end, to make sure I'm learning the right things from these projects
+
+# Prep Projects
+
+bot verbal spouting (text bot training and deployment)
+    have two chatbots, one trained exclusively off of r/chad_vs_virigin comments, and one off of lolcats
+    make them talk to each other in real time when you push a button
+
+Abandoned on 10/31/2022.

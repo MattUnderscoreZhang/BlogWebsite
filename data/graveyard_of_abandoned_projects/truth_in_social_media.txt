@@ -1,0 +1,10 @@
+# The Effect of Exposure to Opinion on Truth in Social Media
+
+This is a project I was interested in for quite some time. I wanted to know how different types of exposure to other people would affect opinion propagation in society. For example, what happens if algorithms always show you opinions that you agree with? What if you're always shown popular opinions? How does dissent form? Do ideas grow under discussion, or do they converge in a narrow band? Do different kinds of algorithms affect whether public opinion converges or diverges from truth?
+
+With some initial modeling of Reddit comments, I was able to show the growth of polarization in public opinion. I presented some initial results at this journal club (slides and code in post):
+http://algorithm-interest-group.me/algorithm/Polarization-Modeling-Zhang/
+
+I'd like to go back on expand on this project more, and make it more rigorous, but I don't have the time right now.
+
+Abandoned on 10/31/2022.
