@@ -56,11 +56,11 @@ What is this useful for? Why malware of course! Or pranking your friends. Maybe 
     });
 </script>
 
-<textarea id="input" rows="4" style="width: 100%; max-width: 100%">
+<textarea id="input" rows="4" style="width: 95%; max-width: 95%">
 Enter text to obfuscate here.
 </textarea>
 <button id="submit">Submit</button>
-<textarea id="output" rows="4" style="width: 100%; max-width: 100%" readonly>
+<textarea id="output" rows="4" style="width: 95%; max-width: 95%" readonly>
 Output
 </textarea>
 <button id="copy">Copy to Clipboard</button>

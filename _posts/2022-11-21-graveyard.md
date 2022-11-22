@@ -54,4 +54,4 @@ $(document).ready(function() {
 <button id="randomize">Random Project</button>
 <br>
 <br>
-<textarea id="output" rows="50" style="width: 100%; max-width: 100%; padding: 10px" readonly></textarea>
+<textarea id="output" rows="50" style="width: 95%; max-width: 95%; padding: 10px" readonly></textarea>

@@ -79,7 +79,7 @@ Note that instead of print statements, I use HTML manipulation. Also, instead of
 
 <script type="text/python" src="/scripts/2020-07-06/soccer.py"></script>
 <button id="playsoccer">Play soccer!</button>
-<textarea id="soccergame" style="resize:none; width:100%" rows="20">[Game will show up here.]</textarea>
+<textarea id="soccergame" style="resize:none; width:95%" rows="20">[Game will show up here.]</textarea>
 
 [brython]: https://github.com/brython-dev/brython
 [tutorial]: https://brython.info/static_tutorial/en/index.html
