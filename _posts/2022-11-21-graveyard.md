@@ -14,26 +14,39 @@ $(document).ready(function() {
     var newIndex = -1;
 
     function get_random_project() {
-        var directory = "/data/graveyard_of_abandoned_projects/"
-        <!--var xmlHttp = new XMLHttpRequest();-->
-        <!--xmlHttp.open('GET', directory, false); // false for synchronous request-->
-        <!--xmlHttp.send(null);-->
-        <!--var ret = xmlHttp.responseText;-->
-        <!--var fileList = ret.split('\<A HREF=\"').slice(5);-->
-        <!--for (var i = 0; i < fileList.length; i++) {-->
-            <!--fileList[i] = fileList[i].split('\"')[0];-->
-        <!--}-->
-        <!--while (newIndex == currentIndex) {-->
-            <!--newIndex = Math.floor(Math.random() * fileList.length);-->
-        <!--}-->
-        <!--var randomFile = fileList[newIndex];-->
-        <!--currentIndex = newIndex;-->
-        var randomFile = "life_calendar.txt";
+        const directory = "/data/graveyard_of_abandoned_projects/"
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open('GET', directory, false); // false for synchronous request
+        xmlHttp.send(null);
+        var ret = xmlHttp.responseText;
+        const fileNames = ret.split('\<A HREF=\"').slice(5);
+        for (var i = 0; i < fileNames.length; i++) {
+            fileNames[i] = fileNames[i].split('\"')[0];
+        }
+        while (newIndex == currentIndex) {
+            newIndex = Math.floor(Math.random() * fileNames.length);
+        }
+        const randomFile = fileNames[newIndex];
+        currentIndex = newIndex;
         $("#output").load(directory + randomFile);
     };
 
-    get_random_project();
-    $("#randomize").click(get_random_project);
+    async function get_random_project_github_pages() {
+        // can't get the xmlHttp method to work on Github Pages
+        const directory = "/data/graveyard_of_abandoned_projects/"
+        const response = await fetch('https://api.github.com/repos/MattUnderscoreZhang/MattUnderscoreZhang.github.io/contents' + directory);
+        const files = await response.json();
+        var fileNames = files.map(function(file) {return file.name});
+        while (newIndex == currentIndex) {
+            newIndex = Math.floor(Math.random() * fileNames.length);
+        }
+        var randomFile = fileNames[newIndex];
+        currentIndex = newIndex;
+        $("#output").load(directory + randomFile);
+    };
+
+    get_random_project_github_pages();
+    $("#randomize").click(get_random_project_github_pages);
 });
 </script>
 
