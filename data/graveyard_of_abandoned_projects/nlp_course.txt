@@ -6,7 +6,7 @@ The first course would have demoed some interesting visualizations and manipulat
 
 Quickly realized this would not be worth the time.
 
-# Ideas
+# Notes
 
 write word2vec explanation blog post
     ML is all about representing data as other data

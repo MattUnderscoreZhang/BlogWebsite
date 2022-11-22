@@ -2,11 +2,11 @@
 
 This is a stock trading game where you're trying to compete against a mix of bots and real humans.
 
-You trade completely worthless NFTs which are exaggerated knockoffs of the worst crypto-bro projects. Bots are buying and selling these assets to each other, causing dips and peaks in price. Each bot is a real algorithm trading on actual signals, including sentiment analysis on posts in the chatroom. The bots generate posts using language models trained exclusively on r/wallstreetbets. Players can write their own algorithms with an API or use the in-game dashboard to buy and sell NFTs.
+It leans into the absolute absurdity of Web3 by having players trade completely worthless NFTs which are exaggerated knockoffs of the dumbest crypto-bro projects. Bots are buying and selling these assets to each other, causing dips and peaks in price. Each bot is a real algorithm trading on actual signals, including natural language processing on posts in the game forums. The bots generate posts using language models trained exclusively on r/wallstreetbets. Players can write their own algorithms with an API or use the in-game dashboard to buy and sell NFTs.
 
 Transactions occur via a cryptocurrency called ScamCoin. You get some by joining, but can also buy more from the central bank or another player. You can also cash out at a greatly reduced rate by selling to the central bank. The central bank rates can fluctuate.
 
-# Ideas
+# Notes
 
 stock market MMO
     notes
@@ -16,7 +16,7 @@ stock market MMO
         fake stock market - could have bots simulating other players at first, to make it really immersive to join
         bots actually do respond to signals, but the algorithms used are completely unknown to the players
         it's also unclear how many bots there are in relation to the players, to make it hard to know how much player actions have an effect
-        a chat room with auto generated posts from bots talking to each other, which you have to distinguish from real human posts
+        a forum with auto generated posts from bots talking to each other, which you have to distinguish from real human posts
         all the assets are worthless auto-generated NFT project knockoffs
         write blog post on Reddit inviting people to come join
         once the player base is large enough, actually have players trade real NFTs (exchangeable for cryptocurrency)

@@ -4,7 +4,7 @@ I organize my own projects in a hierarchical way, where I start from a high-leve
 
 I was thinking if I can create a project management tool based around this idea, it may be possible to create an organization that doesn't require any managers. Groups at each subgoal level can decide on their own representatives, who go to meetings with other subgoal leads when timeboxes run out. If goals are set properly, this could mean that high-level meetings only need to occur every few months. Furthermore, compensation could be determined when deciding on subgoals, and anybody can choose to complete any bottom-level goal, thus making pay directly tied to performance.
 
-# Ideas
+# Notes
 
 project organization project
     description

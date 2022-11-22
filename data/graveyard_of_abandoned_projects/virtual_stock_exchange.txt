@@ -6,6 +6,8 @@ One of my main ideas was to let the customers trade "virtual stocks" that could 
 
 My other idea was to sell put options using customer stocks, but after talking to a friend about this, I couldn't find a way to make this go anywhere.
 
+# Notes
+
 virtual stocks on an exchange
     use a customer's stocks for puts when they're in the account
         customer can get commission-free trades or interest from letting us do this

@@ -6,7 +6,7 @@ I think there are many ways to reduce the computational cost, including by using
 
 I still want to try this out, but don't have the time right now. I wouldn't be surprised if this research is already done by someone else soon.
 
-# Ideas
+# Notes
 
 try out an ELMo architecture that combines LSTMs so there are fewer per layer
     "https://www.analyticsvidhya.com/blog/2019/03/learn-to-use-elmo-to-extract-features-from-text/#:~:text=ELMo%20is%20a%20novel%20way,as%20well%20as%20the%20industry."

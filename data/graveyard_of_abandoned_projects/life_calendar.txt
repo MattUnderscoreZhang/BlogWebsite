@@ -4,6 +4,8 @@ This calendar would let you see the progress of your life in weeks, as described
 
 I abandoned this project because it's already been done.
 
+# Notes
+
 life calendar app
     prompt to enter one thing in each category each day
         what progress did you make towards a goal?

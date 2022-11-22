@@ -6,7 +6,7 @@ The idea is that you could upload a few samples of you speaking, along with cred
 
 May still come back and revive this project later. Just have other things to focus on right now.
 
-# Ideas
+# Notes
 
 spoken phrase recognizer
     can train and download trained model, or keep trained model on my cloud and access via API for a fee

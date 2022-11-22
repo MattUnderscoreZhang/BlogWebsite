@@ -12,7 +12,8 @@ As somebody whose ambitions overshadow his abilities, I think up a lot of projec
 $(document).ready(function() {
     var currentIndex = -1;
     var newIndex = -1;
-    $("#randomize").click(function() {
+
+    function get_random_project() {
         var directory = "/data/graveyard_of_abandoned_projects/"
         var xmlHttp = new XMLHttpRequest();
         xmlHttp.open('GET', directory, false); // false for synchronous request
@@ -27,12 +28,17 @@ $(document).ready(function() {
         }
         var randomFile = fileList[newIndex];
         currentIndex = newIndex;
-        $("#output").load("/data/graveyard_of_abandoned_projects/" + randomFile);
-    });
-})
+        $("#output").load(directory + randomFile);
+    };
+
+    get_random_project();
+    $("#randomize").click(get_random_project);
+});
 </script>
 
-<button id="randomize">Randomize</button>
-<textarea id="output" rows="50" style="width: 100%; max-width: 100%; padding: 10px" readonly>
-Output
-</textarea>
+<br>
+<button id="randomize">Random Project</button>
+<br>
+<br>
+<textarea id="output" rows="50" style="width: 100%; max-width: 100%; padding: 10px" readonly></textarea>
+<!--<plaintext id="output" style="width: 100%; max-width: 100%"></plaintext>-->
